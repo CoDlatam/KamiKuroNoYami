@@ -1,0 +1,337 @@
+/* Todos los navegadores */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -web-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+/* Fuentes
+font-family: 'Bungee Shade', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Rampart One', cursive;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+/* Variables */
+:root {
+    --ligth: #FDFFFC;
+    --dark: #333533;
+    --dark-x: #242423;
+    --yellow: #FFD166;
+    --yellow-n: #FFB703;
+    --yellow-x: #FCA311;
+    --blue: #072AC8;
+    --blue-dark: #005F73;
+    --blue-sky: #58D0E8;
+}
+/*Cuerpo*/
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(var(--dark), var(--dark-x));
+    color: var(--ligth);
+    text-decoration: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+/*Encabezado*/
+body header {
+    text-decoration: none;
+    font-weight: normal;
+}
+.fix{
+    position: sticky;
+    top: 0px;
+}
+body header .navbar {
+    width: 100%;
+    height: 50px;
+    background-color: var(--dark-x);
+    position: relative;
+}
+.CODlg{
+    position: absolute;
+    width: 40%;
+    margin: 13px 5px 13px 5px;
+}
+.btncm {
+    position: absolute;
+    width: auto;
+    height: auto;
+    right: 4px;
+    margin: 11px 5px 12px 5px;
+    outline: none;
+    border: solid 2px var(--yellow);
+    border-radius: 6px;
+    color: var(--yellow);
+    background: var(--dark-x);
+    padding: 6px;
+}
+.btncm a{
+    text-decoration: none;
+    color: var(--yellow);
+    font-family: 'Bungee Shade', cursive;
+}
+.btncm:hover {
+    border: solid 2px var(--yellow-x);
+    color: var(--yellow-x);
+    border-radius: 6px;
+}
+.btncm a:hover {
+    color: var(--yellow-x);
+    font-family: 'Bungee Shade', cursive;
+}
+.titulo {
+    background-image: url('bg-y.gif');
+    background-size: cover;
+    border-top: solid 2px var(--yellow-x);
+    border-bottom: solid 2px var(--yellow-x);
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+.titulo p, h1, h3 {
+    color: var(--dark-x);
+    font-weight: normal;
+    margin: 6px;
+    font-family: 'Quicksand', sans-serif;
+}
+.titulo hr {
+    outline: none;
+    border: none;
+    background-color: var(--dark-x);
+    width: 30%;
+    height: 1px;
+    border-radius: 2px;
+    margin-left: 6px;
+}
+.titulo ul {
+    margin: 6px;
+    color: var(--dark-x);
+}
+
+.titulo ul li {
+    list-style: none;
+}
+/* Imagen Degradada */
+.degradado {
+    width: 90%;
+    position: relative;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.degradado:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--yellow);
+    position: absolute;
+    background: linear-gradient(rgba(255,255,255,0), black);
+}
+.velikan {
+    width: 100%;
+    border-radius: 10px;
+}
+.textH {
+    position: absolute;
+    bottom: 7px;
+    font-size: 10px;
+    display: inline-block;
+    left: 5px;
+}
+.textH a{
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 20px;
+    text-decoration: none;
+    color: gray;
+    font-family: 'Bungee Shade', cursive;
+}
+/**  Main */
+/** breadcrum **/
+.breadcrum{
+    background-color: gray;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding: 4px;
+    position: -webkit-sticky;
+}
+.breadcrum .start {
+    color: var(--yellow-x);
+}
+
+.breadcrum a {
+    color: var(--yellow);
+    text-decoration: none;
+}
+.breadcrum li{
+    display: inline-block;
+    color: var(--yellow);
+}
+/** articulos **/
+.articles {
+    margin-top: 15px;
+    margin-bottom: 50px;
+    padding: 7px;
+    font-family: 'Montserrat', sans-serif;
+}
+.articles h2 {
+    font-weight: normal;
+    font-size: 30px;
+}
+.articles hr {
+    margin-bottom: 7px;
+    background: var(--yellow-x);
+    width: 50%;
+    height: 4px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+}
+.articles article {
+    padding-bottom: 10px;
+}
+.articles article p, li {
+    font-size: 15px;
+}
+.articles p {
+    font-size: 20px;
+}
+.articles #002 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.articles .ult {
+    margin-bottom: 0px;
+    border-bottom: 1px solid var(--yellow);
+}
+.unete {
+    background: rgba(250,250,250,0);
+    border: 1px solid var(--yellow);
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90%;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+.unete .uneteT0 {
+    font-family: 'Rampart One', cursive;
+    color: var(--yellow);
+    font-weight: normal;
+    text-align: center;
+}
+.unete .uneteT1 {
+    text-align: center;
+    color: var(--ligth);
+}
+.unete .uneteT {
+    color: var(--ligth);
+}
+/* Noticias */
+main .noticiero {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    font-weight: normal;
+}
+.noticiero h2 {
+    text-align: center;
+}
+.noticiero hr {
+    outline: none;
+    border: none;
+    background: var(--yellow-x);
+    border-radius: 5px;
+    width: 90%;
+    height: 2px;
+    margin: auto;
+}
+.noticiero .new1 {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border: dotted 2px var(--yellow-x);
+    padding: 5px;
+    border-radius: 10px;
+}
+.noticiero .new1 h2 {
+    font-weight: normal;
+    text-align: center;
+    margin: 10px;
+}
+.noticiero .new1 .nimg {
+    width: 90%;
+    height: auto;
+    border: solid 1px var(--yellow-n);
+    border-radius: 5px;
+    margin: auto;
+}
+.noticiero .new1 .nimg img {
+    width: 100%;
+    border-radius: 5px;
+}
+/** Pie de pagina **/
+footer .piesito {
+    margin-top: 15px;
+    border-top: solid 1px var(--yellow);
+    border-bottom: solid 1px var(--yellow);
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    position: relative;
+}
+footer .piesito h5 {
+    font-weight: normal;
+    color: var(--yellow);
+}
+footer .piesito p {
+    font-size: 5px;
+}
+footer .piesito .loguito {
+    width: 70px;
+    height: auto;
+    border: 1px solid var(--yellow);
+    border-radius: 20px;
+    top: 14px;
+    right: 17px;
+    position: absolute;
+}
+
+footer .piesito .loguito img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+footer .piesito .contacto {
+    margin: 10px;
+}
+
+footer .piesito .contacto a{
+    text-decoration: underline;
+    font-weight: none;
+    color: var(--ligth);
+}
+
+footer .piesito .based {
+    margin: 10px;
+}
+
+footer .piesito .keys {
+    position: absolute;
+    margin: 10px;
+    left: 150px;
+    top: 5px;
+}
+
+footer .piesito .keys li {
+    font-size: 5px;
+    list-style: none;
+}
